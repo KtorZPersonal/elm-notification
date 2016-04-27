@@ -1,5 +1,9 @@
 # Created by https://www.gitignore.io/api/node
 
+### Examples ###
+dist/
+**/.build/app.js
+
 ### Elm ###
 # elm-package generated files
 elm-stuff/

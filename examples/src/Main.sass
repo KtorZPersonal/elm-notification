@@ -1,0 +1,66 @@
+html
+    overflow-y: scroll
+
+html, body, #main
+    height: 100%
+    margin: 0
+    padding: 0
+    width: 100%
+
+.wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 100%
+
+.controls
+    display: flex
+    margin: auto 0
+    width: 50%
+    justify-content: space-around
+
+$color-success: #8BC34A
+$color-info: #2196F3
+$color-warning: #FFC107
+$color-error: #F44336
+
+button.btn
+    border: none
+    box-shadow: 0 0.1rem 0.2rem #999
+    color: #FFFFFF
+    cursor: pointer
+    font-size: 1rem
+    font-variant: small-caps
+    font-weight: 600
+    height: 2rem
+    min-width: 5.5rem
+    outline: none
+    padding: 0 1rem
+
+button.btn-success
+    background-color: $color-success
+button.btn-success:hover
+    background: darken($color-success, 5%)
+button.btn-success:active
+    background: darken($color-success, 20%)
+
+button.btn-info
+    background-color: $color-info
+button.btn-info:hover
+    background: darken($color-info, 5%)
+button.btn-info:active
+    background: darken($color-info, 20%)
+
+button.btn-warning
+    background-color: $color-warning
+button.btn-warning:hover
+    background: darken($color-warning, 5%)
+button.btn-warning:active
+    background: darken($color-warning, 20%)
+
+button.btn-error
+    background-color: $color-error
+button.btn-error:hover
+    background: darken($color-error, 5%)
+button.btn-error:active
+    background: darken($color-error, 20%)

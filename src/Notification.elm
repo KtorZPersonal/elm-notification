@@ -1,5 +1,6 @@
 module Notification
-  ( success
+  ( Notification
+  , success
   , info
   , warning
   , error
@@ -20,7 +21,7 @@ To create a notification, just send a `Notification` to the provided signal addr
 done either by directly calling `Signal.send` or, by using events subscriber from the `Html.Events`
 module.
 
-@docs success, info, warning, error, address
+@docs Notification, success, info, warning, error, address
 
 # Display and run effects
 
@@ -60,13 +61,13 @@ hoverDuration =
   Time.millisecond * 250
 
 {- Color binding with levels -}
-asColor : String -> String
+asColor : Level -> String
 asColor level =
   case level of
-    "Success" -> "#8BC34A"
-    "Warning" -> "#FFC107"
-    "Error"   -> "#F44336"
-    _         -> "#2196F3"
+    Success -> "#8BC34A"
+    Info    -> "#2196F3"
+    Warning -> "#FFC107"
+    Error   -> "#F44336"
 
 
 -------------------------------------------------------
@@ -110,7 +111,7 @@ type HoverType
 {-| Representation of a notification -}
 type alias Notification =
   { content: String
-  , level: String
+  , level: Level
   }
 
 type Level
@@ -321,7 +322,7 @@ viewToast addr toast =
 -------------------------------------------------------
 notifications : Signal.Mailbox Notification
 notifications =
-  Signal.mailbox { content = "", level = "" }
+  Signal.mailbox { content = "", level = Info }
 
 app : { view: Signal Html, task: Signal (Task Effects.Never ()) }
 app =
@@ -399,7 +400,7 @@ error =
 new : Level -> String -> Notification
 new level content =
   { content = content
-  , level = toString level
+  , level = level
   }
 
 

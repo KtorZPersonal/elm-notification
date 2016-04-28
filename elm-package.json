@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1",
+    "version": "1.1.0",
     "summary": "Display discardable notification toast messages on top of the window",
     "repository": "https://github.com/KtorZ/elm-notification.git",
     "license": "BSD3",

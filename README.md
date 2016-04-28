@@ -1,9 +1,5 @@
-<p align="center">
-    <img src="https://img.shields.io/badge/license-mit-blue.svg?style=flat-square" />
-    <img src="https://img.shields.io/badge/gluten-free-green.svg?style=flat-square" />
-</p>
+# elm-notification [![](https://img.shields.io/badge/documentation-1.0.0-yellow.svg?style=flat-square)](http://package.elm-lang.org/packages/KtorZ/elm-notification/latest/) ![](https://img.shields.io/badge/license-mit-blue.svg?style=flat-square) ![](https://img.shields.io/badge/gluten-free-green.svg?style=flat-square)
 
-# elm-notification [![](https://img.shields.io/badge/documentation-1.0.0-yellow.svg?style=flat-square)](http://package.elm-lang.org/packages/KtorZ/elm-notification/latest/)
 
 Easily display toast notifications to users. The module defines four common alert levels (success,
 info, warning and error) and takes care of managing toast lifecycles.

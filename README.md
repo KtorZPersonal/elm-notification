@@ -3,25 +3,25 @@
     <img src="https://img.shields.io/badge/gluten-free-green.svg?style=flat-square" />
 </p>
 
-# elm-notification
+# elm-notification [![](https://img.shields.io/badge/documentation-1.0.0-yellow.svg?style=flat-square)](http://package.elm-lang.org/packages/KtorZ/elm-notification/latest/)
 
 Easily display toast notifications to users. The module defines four common alert levels (success,
 info, warning and error) and takes care of managing toast lifecycles.
 
 See the [demo](https://ktorz.github.io/elm-notification) to get a nice overview of the capabilities.
 
-# How to use it
+# Install it
+
+```bash
+elm package install KtorZ/elm-notification
+```
+
+# Use it
 
 Within your app, first connect the effects runner to a port (or alternatively, merged it into
 one of your effects signal that is already bound to a port).
 
 ```elm
-import Notification
-
--- 
--- Some stuff...
---
-
 port notifications : Signal (Task Effects.Never ())
 port notifications =
   Notification.task

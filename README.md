@@ -40,7 +40,7 @@ To actually send a notification, use the `address` provided by the module:
 view : Html -> Html
 view notifications =
   let
-    controls = button [onClick Notification.address (Notification.info "Elm rocks!")]
+    controls = button [onClick Notification.address (Notification.info "Elm rocks!")] [text "Go"]
   in
     div [] [notifications, controls]
 ```

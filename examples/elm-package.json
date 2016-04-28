@@ -2,7 +2,7 @@
     "version": "1.0.0",
     "repository": "https://github.com/KtorZ/elm-notification.git",
     "summary": "A basic demo app for elm-notification module",
-    "license": "BSD3",
+    "license": "Mozilla Public License 2.0",
     "source-directories": [
         "./src"
     ],

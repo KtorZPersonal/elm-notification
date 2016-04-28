@@ -1,4 +1,4 @@
-# elm-notification [![](https://img.shields.io/badge/documentation-1.1.0-yellow.svg?style=flat-square)](http://package.elm-lang.org/packages/KtorZ/elm-notification/latest/) ![](https://img.shields.io/badge/license-mit-blue.svg?style=flat-square) ![](https://img.shields.io/badge/gluten-free-green.svg?style=flat-square)
+# elm-notification [![](https://img.shields.io/badge/documentation-1.1.1-yellow.svg?style=flat-square)](http://package.elm-lang.org/packages/KtorZ/elm-notification/latest/) ![](https://img.shields.io/badge/license-MPL%202.0-blue.svg?style=flat-square) ![](https://img.shields.io/badge/gluten-free-green.svg?style=flat-square)
 
 
 Easily display toast notifications to users. The module defines four common alert levels (success,

@@ -1,8 +1,8 @@
 {
-    "version": "1.1.0",
+    "version": "1.1.1",
     "summary": "Display discardable notification toast messages on top of the window",
     "repository": "https://github.com/KtorZ/elm-notification.git",
-    "license": "BSD3",
+    "license": "Mozilla Public License 2.0",
     "source-directories": [
         "./src"
     ],
